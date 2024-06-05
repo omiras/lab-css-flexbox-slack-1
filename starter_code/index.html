@@ -6,6 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          backgroundImage: {
+            'hero-image': "url('images/background-singup.png')",
+          }
+        }
+      }
+    }
+  </script>
 
 
   <!-- link the Font Awesome stylesheet - CDN -->
@@ -20,7 +31,7 @@
 
 <body class="bg-fuchsia-900">
   <!-- NAVBAR -->
-  <nav class="flex items-center justify-between py-4 m-4">
+  <nav class="flex items-center justify-between py-4 m-4 ">
     <div class="w-1/4">
       <img src="./images/slack-logo.png" alt="Slack logo" />
 
@@ -62,7 +73,7 @@
 
 
   <!-- HEADER -->
-  <header class="mt-8 mx-4">
+  <header class="mt-8 mx-4 md:flex md:h-[500px] md:bg-hero-image md:bg-left-top md:bg-no-repeat  ">
     <div class="space-y-8">
       <h1 class="text-white text-5xl font-semibold  text-center">Great teamwork starts with a digital HQ</h1>
 
@@ -86,7 +97,7 @@
     </div>
   </header>
 
-  <main class="relative bottom-8">
+  <main class="relative bottom-8 md:static">
     <section class="p-4 bg-orange-100">
       <p class="uppercase text-center py-4  font-bold ">Trusted by companies all over the world</p>
 
